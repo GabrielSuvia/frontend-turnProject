@@ -3,6 +3,7 @@ import axios from "axios";
 import Validate from "../helpers/validate.js";
 import { useNavigate} from "react-router-dom";
 import styles from "./Register.module.css";
+import { pathBackend } from "../helpers/path.js";
 
 const Register = ()=>{
 const navigate = useNavigate();
@@ -39,7 +40,7 @@ const [errors, setErrors] = useState({
 
     e.preventDefault();
 
-       axios.post("https://my-four-app-production.up.railway.app/user/register", userForm)
+       axios.post(`${pathBackend}/user/register`, userForm)
        .then((response)=>console.log(response.data))
        .catch((error)=> {
         console.error('errors to send the data', error);

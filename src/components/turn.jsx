@@ -4,6 +4,7 @@ import { useSelector, useDispatch } from 'react-redux'
 import { removeReserve } from '../redux/sliceReserve'
 import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
+import { pathBackend } from '../helpers/path'
 
 const Turns = ({turn})=>{//es un vacio sacado de la db
  console.log("ID: ", turn)//me lectura 2 veces
@@ -21,7 +22,7 @@ console.log(turnSelector,"turnSelector")
 
    console.log(turnFind.id, "eliminando en component Turn",turnFind)
 
-    axios.put(`https://my-four-app-production.up.railway.app/turn/cancel/${turnFind.id}`, turnFind)
+    axios.put(`${pathBackend}/turn/cancel/${turnFind.id}`, turnFind)
     .then((response)=>{ console.log("turno cancelado", response.data)
         setBtn("Cancelled")
         dispatch(removeReserve(turnFind.id))

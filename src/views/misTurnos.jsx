@@ -5,6 +5,7 @@ import {useSelector, useDispatch} from 'react-redux'
 import {  reservationAdd} from '../redux/sliceReserve.jsx'
 import { useNavigate } from 'react-router-dom'
 import style from './titulo.module.css'
+import { pathBackend } from '../helpers/path.js'
 
 
 const MisTurno = ()=>{
@@ -27,7 +28,7 @@ if(!userSelect){
 
    useEffect(()=>{
     
-        axios.get(`https://my-four-app-production.up.railway.app/user/${userSelect.id}`)
+        axios.get(`${pathBackend}/user/${userSelect.id}`)
         .then((response) => {  response.data.turnId?.forEach((item)=>dispatch(reservationAdd(item)) )
             console.log("userId, turnId",response.data.turnId)
         })

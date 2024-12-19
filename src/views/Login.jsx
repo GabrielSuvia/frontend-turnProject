@@ -5,6 +5,7 @@ import styles from "./login.module.css"
 import ValidateLogin from "../helpers/validateLogin.js";
 import {useDispatch} from "react-redux";
 import {logIn} from "../redux/sliceUser.jsx"
+import { pathBackend } from "../helpers/path.js";
 
 
 const Login = ()=>{
@@ -33,7 +34,7 @@ setLogin({
 
 const handleSubmitForm = (e)=>{
     e.preventDefault();
-     axios.post("https://my-four-app-production.up.railway.app/user/login", login, 
+     axios.post(`${pathBackend}/user/login`, login, 
         {headers: {
         'Content-Type': 'application/json'
       }})

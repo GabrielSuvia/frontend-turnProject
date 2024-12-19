@@ -1,0 +1,1 @@
+export const pathBackend = 'https://backend-turnproject-production.up.railway.app/'

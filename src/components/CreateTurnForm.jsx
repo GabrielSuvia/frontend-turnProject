@@ -4,6 +4,7 @@ import axios from "axios"
 import { useNavigate } from "react-router-dom"
 import { useState } from "react"
 import styles from "./turnModule.module.css"
+import { pathBackend } from "../helpers/path"
 
 const workHours = ["9:00","10:00","11:00","12:00","13:00","14:00","15:00","16:00"]
 
@@ -35,7 +36,7 @@ const handleFormTurn = (e)=>{
 
 console.log(turn,"turn")
 
-    axios.post("https://my-four-app-production.up.railway.app/turn/schedule", turn)
+    axios.post(`${pathBackend}/turn/schedule`, turn)
     .then((response)=>{console.log(response.data)
         dispatch(reservationAdd(response.data))
         navigate('/MisTurnos')
