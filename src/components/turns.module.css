@@ -1,0 +1,25 @@
+
+/* Record Styles */
+.record{
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+    color:black;
+text-align: center;
+}
+.container {
+
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 3px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 750px;
+    display: flex;
+    justify-content:space-around;
+    position: relative;
+    left: 320px;
+    align-items: center;
+    margin-top: 50px;
+     top: 50px;
+  }

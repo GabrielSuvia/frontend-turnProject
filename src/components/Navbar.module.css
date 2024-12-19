@@ -1,0 +1,39 @@
+* {
+   margin: 0; /* Elimina todos los márgenes por defecto */
+   padding: 0; /* Elimina todos los paddings por defecto */
+   box-sizing: border-box; /* Incluye padding y border en el cálculo del ancho y alto */
+ }
+
+
+.navbar {
+   background-color: #333;
+   margin: 0;
+   overflow: hidden;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   padding: 14px 0;
+   position: fixed;
+   top: 0;
+   width: 100%;
+   right: 0;
+   z-index: 1000;
+}
+
+.navbar span {
+   color: white;
+   padding: 14px 20px;
+}
+
+
+body{
+   background-color: #5260db;
+  width: 100%; 
+  margin: 0;
+  padding: 0;
+  min-height: 100vh
+}
+.btn{
+  background-color: rgba(240, 237, 231, 0.863);
+  
+}

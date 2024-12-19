@@ -1,0 +1,44 @@
+.formContainer {
+    display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  flex-direction: row;
+  gap: 16px;
+  max-width: 800px; 
+  margin: 0px; 
+  padding: 0px;
+  border: 1px solid #ddd; 
+  border-radius: 8px; 
+  box-sizing: border-box; 
+  background-color: #f9f9f9;
+  position: absolute;
+  top: 130px;
+  left: 300px;
+   line-height: 4;
+
+}
+
+
+.formGroup{
+   
+    display: flex;
+    justify-content:space-around;
+    flex-direction: row;
+    width: 800px;
+    margin: 50;
+    line-height: 3;
+}
+
+.btn{
+    padding: 12px 24px;
+    font-size: 16px; 
+    font-family: Arial, sans-serif; 
+    color: #fff; 
+    background-color: #5260DB; 
+    border: 2px solid transparent; 
+    border-radius: 8px;
+    cursor: pointer; 
+    position: relative;
+    left: 340px;
+    text-align: center;
+}

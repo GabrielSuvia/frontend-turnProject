@@ -1,0 +1,62 @@
+.contein{
+ display: flex;
+ justify-content: center;
+ flex-direction: column;
+ align-items: center;
+}
+
+.boton{
+ background-color: #ebecf5;
+position: absolute;
+right: 200px;
+margin: 10px;
+}
+
+.userProfile {
+  display: flex; /* Organiza la foto y el nombre en una fila */
+  flex-direction: column;
+  position: fixed;
+  right: 0;
+  color: rgb(218, 210, 196);
+}
+
+.userPhoto {
+  width: 50px; /* Ancho de la foto */
+  height: 50px; /* Alto de la foto */
+  /* Hace que la foto sea circular */
+  object-fit: cover; /* Asegura que la imagen cubra el contenedor sin distorsión */
+  position: relative;
+  color: #dad3bf;
+  left: 90px;
+}
+
+.userName {
+  font-size: 16px; /* Tamaño de la fuente para el nombre */
+  font-weight: bold; /* Hace que el nombre sea negrita */
+  color: #f5f2ee; /* Color del texto */
+  position: relative;
+}
+
+.turnes{
+display: flex;
+flex-direction: column;
+align-items: center;
+position: absolute;
+top: 100px;
+width: 1200px;
+height: 100%;
+right: 380px;
+}
+
+.turn{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  right: 200px;
+}
+.titulo{
+ position: relative;
+ left: 300px;
+}

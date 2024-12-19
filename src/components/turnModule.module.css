@@ -1,0 +1,25 @@
+.formContein{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 500px;
+    top: 170px;
+    width: 280px;
+    height: 50px;
+    gap: 60px;
+}
+.boton{
+   background-color: white;
+   border-color:rgb(44, 41, 36) ;
+   border-radius: 2px;
+   line-height:15px;
+   text-align: center;
+    
+}
+.title{
+    position: absolute;
+    left: 550px;
+    bottom:500px;
+    scale: 1.5;
+    color: rgb(43, 43, 201);
+}
