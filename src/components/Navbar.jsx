@@ -28,7 +28,7 @@ const Navbar = ()=>{
    
    {user?(<>
    
-    <Link to="/Misturnos">My turns</Link>
+    <Link to="/Misturnos">MY TURNS</Link>
     <button className={styles.btn} onClick={handleState}>Logout</button>
 
     <div>

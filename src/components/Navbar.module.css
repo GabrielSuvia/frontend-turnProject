@@ -1,8 +1,4 @@
-* {
-   margin: 0; /* Elimina todos los márgenes por defecto */
-   padding: 0; /* Elimina todos los paddings por defecto */
-   box-sizing: border-box; /* Incluye padding y border en el cálculo del ancho y alto */
- }
+
 
  body{
    background-color: #5260db;

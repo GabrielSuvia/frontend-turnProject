@@ -53,17 +53,17 @@ const handleSubmitForm = (e)=>{
     return (<div>
    
     <form onSubmit={handleSubmitForm} className={styles.formContein}>
-         <h1 style={{color:"#5260DB",position:"relative"}}>Login</h1>
+         <h1 style={{color:"#5260DB",position:"relative",margin:'0px'}}>Login</h1>
          <div className={styles.entrada1} >
-            <label style={{position:'relative',  color:'#5260DB', width:'75px',height:'40px'}}>Username</label>
+            <label style={{color:'#5260DB', width:'75px',height:'25px',lineHeight: '1.5'}}>Username</label>
             <input type="text" name="userName" value={login.userName} onChange={handleOnchange} className={styles.input1}/>
-            {errors.userName? <p style={{position:'relative', color:'red', width:'270px', height:'40px'}}>{errors.userName}</p>:<p style={{width:'270px', height:'40px'}}></p>}
+            {errors.userName? <p style={{lineHeight: '1.5', color:'red', width:'270px', height:'30px',margin:'0'}}>{errors.userName}</p>:<p style={{width:'270px', height:'40px'}}></p>}
         </div>
 
         <div className={styles.entrada2}>
-            <label style={{position:'relative', color:'#5260DB', width:'75px',height:'40px'}}>Password</label>
+            <label style={{color:'#5260DB', width:'75px',height:'25px',lineHeight: '1.5'}}>Password</label>
             <input type="password" name="password" value={login.password} onChange={handleOnchange} className={styles.input2} />
-            {errors.password?<p style={{position:'relative', color:'red', width:'270px', height:'80px'}}>{errors.password}</p>:<p style={{width:'270px', height:'40px'}}></p>}
+            {errors.password?<p style={{lineHeight: '1.5', color:'red', width:'270px', height:'30px', margin:'0'}}>{errors.password}</p>:<p style={{width:'270px', height:'30px'}}></p>}
       </div>
           <button type="submit" className={styles.boton}>Enter</button>
     </form>

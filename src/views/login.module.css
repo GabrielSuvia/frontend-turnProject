@@ -1,17 +1,17 @@
 .formContein{
     background-color: white;
     border-radius: 3%;
-    padding: 130px;
+    padding: 0px;
     position: relative;
     top: 150px;
     left: 400px;
-    width: 500px;
-    height: 280px;
+    width: 520px;
+    height: 230px;
     bottom: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
     flex-direction: column;
     
     }
@@ -22,9 +22,10 @@
     position: relative;
     left: 40px;
     margin: 5px;
-    height: 70px;
+    height: 30px;
     width: 700px;
     gap: 10px;
+    line-height: 3;
 }
 .entrada2{
     display: flex;
@@ -32,7 +33,7 @@
     position: relative;
     left: 40px;
     margin: 5px;
-    height: 70px;
+    height: 30px;
     width: 700px;
     gap:10px;
 
@@ -40,13 +41,13 @@
 .input1{
    width: 200px;
    position: relative;
-   height: 30px;
+   height: 20px;
 }
 
 .input2{
     width: 200px;
    position:relative;
-   height: 30px;
+   height: 20px;
  
 }
 

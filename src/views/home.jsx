@@ -7,7 +7,7 @@ const Home = ()=>{
     return(<div className={styles.homeContainer}>
      <br/>
      <br/>
-    <h1 style={{top:"150px"}}>Bienvenido a tu Banco</h1>
+    <h1 style={{position:'relative',top:"30px"}}>Bienvenido a tu Banco</h1>
 
     <div className={styles.imageContainer}>
     <div className={styles.imageTtem}>
