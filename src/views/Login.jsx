@@ -53,20 +53,18 @@ const handleSubmitForm = (e)=>{
     return (<div>
    
     <form onSubmit={handleSubmitForm} className={styles.formContein}>
-         <h1 style={{color:"#5260DB",position:"relative",top:"-60px"}}>Login</h1>
-
+         <h1 style={{color:"#5260DB",position:"relative"}}>Login</h1>
          <div className={styles.entrada1} >
-            <label style={{position:'absolute', left:'30px',top:'68px', color:'#5260DB'}}>Username</label>
+            <label style={{position:'relative',  color:'#5260DB', width:'75px',height:'40px'}}>Username</label>
             <input type="text" name="userName" value={login.userName} onChange={handleOnchange} className={styles.input1}/>
-            {errors.userName && <p style={{position:'absolute', left:'380px', top:'75px', color:'red'}}>{errors.userName}</p>}
+            {errors.userName? <p style={{position:'relative', color:'red', width:'270px', height:'40px'}}>{errors.userName}</p>:<p style={{width:'270px', height:'40px'}}></p>}
         </div>
 
         <div className={styles.entrada2}>
-            <label style={{position:'absolute', left:'30px',top:'140px', color:'#5260DB'}}>Password</label>
+            <label style={{position:'relative', color:'#5260DB', width:'75px',height:'40px'}}>Password</label>
             <input type="password" name="password" value={login.password} onChange={handleOnchange} className={styles.input2} />
-            {errors.password &&<p style={{position:'absolute', left:'380px',top:'140px', color:'red'}}>{errors.password}</p>}
+            {errors.password?<p style={{position:'relative', color:'red', width:'270px', height:'80px'}}>{errors.password}</p>:<p style={{width:'270px', height:'40px'}}></p>}
       </div>
-
           <button type="submit" className={styles.boton}>Enter</button>
     </form>
     </div>

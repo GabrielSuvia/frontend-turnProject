@@ -9,7 +9,6 @@ text-align: center;
 .container {
 
     max-width: 800px;
-    margin: 20px auto;
     padding: 3px;
     background-color: #fff;
     border-radius: 8px;
@@ -18,8 +17,14 @@ text-align: center;
     display: flex;
     justify-content:space-around;
     position: relative;
-    left: 320px;
     align-items: center;
-    margin-top: 50px;
-     top: 50px;
+    top: 50px;
+  }
+
+  .btn{
+    background-color: rgb(255, 255, 255);
+    border-color:rgb(44, 41, 36) ;
+    border-radius: 7px;
+    line-height:15px;
+    text-align: center;
   }

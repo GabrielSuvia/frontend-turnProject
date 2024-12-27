@@ -1,45 +1,53 @@
 .formContein{
     background-color: white;
     border-radius: 3%;
+    padding: 130px;
     position: relative;
-    top: 20px;
+    top: 150px;
     left: 400px;
-    width: 550px;
+    width: 500px;
     height: 280px;
     bottom: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 25px;
+    gap: 10px;
     flex-direction: column;
-    text-align: center;
     
     }
     
 .entrada1{
     display: flex;
     justify-content: center;
-
+    position: relative;
+    left: 40px;
+    margin: 5px;
+    height: 70px;
+    width: 700px;
+    gap: 10px;
 }
 .entrada2{
     display: flex;
     justify-content: center;
+    position: relative;
+    left: 40px;
+    margin: 5px;
+    height: 70px;
+    width: 700px;
+    gap:10px;
 
 }
 .input1{
    width: 200px;
-   position: absolute;
+   position: relative;
    height: 30px;
-   top: 65px;
-    left: 125px;
 }
 
 .input2{
     width: 200px;
-   position:absolute;
+   position:relative;
    height: 30px;
-   bottom: 120px;
-   left: 125px;
+ 
 }
 
 .boton{
@@ -52,7 +60,6 @@
     border-radius: 8px;
     cursor: pointer; 
     position: relative;
-    top:40px;
 }
 body{
     background-color: #007bff;

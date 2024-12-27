@@ -11,7 +11,7 @@ const ValidateLogin = (input)=>
      if(!input.password){
         errors.password = "password is required";
      }else if(!/^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}$/.test(input.password)){//uso de regex
-      errors.password = "Is necesary at least 6 characters";
+      errors.password = "at least 6 characters";
      }
      return errors;
 

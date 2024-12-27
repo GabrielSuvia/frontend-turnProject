@@ -39,7 +39,7 @@ return(<div className={styles.container}>
         <p className={styles.record}>date: {turn.date}</p>
         <p className={styles.record}>time: {turn.time}</p>
         <p className={styles.record}>status: {turn.status}</p>
-        <button onClick={handleDelete}>{btn}</button>
+        <button className={styles.btn} onClick={handleDelete}>{btn}</button>
 
        </div>)
 

@@ -22,7 +22,6 @@ const Navbar = ()=>{
     }
 
     return (
-   
     <div className={styles.navbar} >
     <img src={images} alt="NH" style={{width:"70px", height:"70px"}} />
     <Link to="/">HOME</Link>

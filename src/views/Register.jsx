@@ -45,7 +45,6 @@ const [errors, setErrors] = useState({
        .catch((error)=> {
         console.error('errors to send the data', error);
         alert("faill data...");
-       
        })
 
     alert("succesfully registered...");
@@ -59,42 +58,40 @@ const [errors, setErrors] = useState({
        <h1 style={{margin:'20px',position:'relative',left:'30%',color:'#5260DB'}}>Register</h1>
        
        <div className={styles.formGroup}>
-        <label style={{position:'relative', left:'-350px', color:'#5260DB'}}>username</label>
-        <input type="text" name="userName" value={userForm.userName} onChange={handleOnchange} style={{width:'400px',height:'30px',position:'absolute',left:'150px'}} />
-      {errors.userName && <p style={{color:'red',position: 'absolute', right:'0px'}}>{errors.userName}</p>}
+        <label style={{position:'relative', color:'#5260DB', width:'75px'}}>username</label>
+        <input type="text" name="userName" value={userForm.userName} onChange={handleOnchange} style={{width:'250px',height:'30px',position:'relative'}} />
+      {errors.userName? <p style={{color:'red',position: 'relative', width:'260px', height:'50'}}>{errors.userName}</p>:<p style={{width:'200', height:'50px'}}></p>}
       </div>
 
       <div className={styles.formGroup}>
-        <label style={{position:'relative', left:'-350px', color:'#5260DB'}}>password</label>
-        <input type="password" name="password" value={userForm.password} onChange={handleOnchange} style={{width:'400px',height:'30px',position:'absolute',left:'150px'}}/>
-        {errors.password && <p style={{color:'red',position: 'absolute', right:'0px'}}>{errors.password}</p>}
+        <label style={{position:'relative', color:'#5260DB', width:'75px'}}>password</label>
+        <input type="password" name="password" value={userForm.password} onChange={handleOnchange} style={{width:'250px',height:'30px',position:'relative'}}/>
+        {errors.password? <p style={{color:'red',position: 'relative', width:'260px', height:'50'}}>{errors.password}</p>:<p style={{width:'200', height:'50px'}}></p>}
      </div>
 
      <div className={styles.formGroup}>
-        <label style={{position:'relative', left:'-350px', color:'#5260DB'}}>name</label>
-        <input type="text" name="name" value={userForm.name} onChange={handleOnchange} style={{width:'400px',height:'30px',position:'absolute',left:'150px'}}/>
-        {errors.name && <p style={{color:'red', position: 'absolute', right:'0px'}}>{errors.name}</p>}
+        <label style={{position:'relative', color:'#5260DB', width:'75px'}}>name</label>
+        <input type="text" name="name" value={userForm.name} onChange={handleOnchange} style={{width:'250px',height:'30px',position:'relative'}}/>
+        {errors.name? <p style={{color:'red', position: 'relative', width:'260px', height:'50'}}>{errors.name}</p>:<p style={{width:'200', height:'50px'}}></p>}
       </div>
 
       <div className={styles.formGroup}>
-        <label style={{position:'relative', left:'-350px', color:'#5260DB'}} >email</label>
-        <input type="email" name="email" value={userForm.email} onChange={handleOnchange} style={{width:'400px',height:'30px',position:'absolute',left:'150px'}}/>
-        {errors.email && <p style={{color:'red', position: 'absolute', right:'0px'}}>{errors.email}</p>}
+        <label style={{position:'relative', color:'#5260DB', width:'75px'}} >email</label>
+        <input type="email" name="email" value={userForm.email} onChange={handleOnchange} style={{width:'250px',height:'30px',position:'relative'}}/>
+        {errors.email? <p style={{color:'red', position: 'relative', width:'260px', height:'50'}}>{errors.email}</p>:<p style={{width:'200', height:'50px'}}></p>}
       </div> 
       
       <div className={styles.formGroup}>
-        <label style={{position:'relative', left:'-350px', color:'#5260DB'}}>birthdate</label>
-        <input type="text" name="birthdate" value={userForm.birthdate} onChange={handleOnchange} style={{width:'400px',height:'30px',position:'absolute',left:'150px'}}/>
-        {errors.birthdate && <p style={{color:'red', position: 'absolute', right:'0px'}}>{errors.birthdate}</p>}
+        <label style={{position:'relative', color:'#5260DB', width:'75px'}}>birthdate</label>
+        <input type="text" name="birthdate" value={userForm.birthdate} onChange={handleOnchange} style={{width:'250px',height:'30px',position:'relative'}}/>
+        {errors.birthdate? <p style={{color:'red', position: 'relative', width:'260px', height:'50'}}>{errors.birthdate}</p>:<p style={{width:'200', height:'50px'}}></p>}
       </div>
       
-      
       <div className={styles.formGroup}>
-        <label style={{position:'relative', left:'-350px', color:'#5260DB'}}>nDni</label>
-        <input type="number" name="nDni" value={userForm.nDni} onChange={handleOnchange} style={{width:'400px',height:'30px',position:'absolute',left:'150px'}}/>
-        {errors.nDni && <p style={{color:'red', position: 'absolute', right:'0px'}}>{errors.nDni}</p>}
+        <label style={{position:'relative', color:'#5260DB', width:'75px'}}>nDni</label>
+        <input type="number" name="nDni" value={userForm.nDni} onChange={handleOnchange} style={{width:'250px',height:'30px',position:'relative'}}/>
+        {errors.nDni? <p style={{color:'red', position: 'relative', width:'260px', height:'50'}}>{errors.nDni}</p>:<p style={{width:'200', height:'50px'}}></p>}
      </div>
-   
 
         <button type="submit" className={styles.btn}>Register</button>
     </form>

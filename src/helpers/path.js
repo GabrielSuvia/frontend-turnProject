@@ -1,1 +1,1 @@
-export const pathBackend = 'https://backend-turnproject-production.up.railway.app'
+export const pathBackend = 'http://localhost:3000'//'https://backend-turnproject-production.up.railway.app'

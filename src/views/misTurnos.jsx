@@ -42,25 +42,18 @@ if(!userSelect){
 
    },userSelect?[userSelect.id] : [])
    
-    console.log("renderizando",turnSelect)
+    return(<div className={style.turnes}>
 
-
-    return(<div >
-
-     <div className={style.turnes}>
-    
     <div>
     <h1 className={style.titulo}>Mis Turnos</h1>
     </div>
-    <div >
+    
     <button onClick={handleAddTurn} className={style.boton}>Crear Nuevo turno</button>
+   
         {turnSelect?.map((item,index)=>{
            return< Turns key={index} turn={item}/>
         })}
-    </div>
-    </div>
 
- 
     </div>)
 }
 
