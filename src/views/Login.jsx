@@ -44,14 +44,9 @@ const handleSubmitForm = (e)=>{
         Navigate("/MisTurnos");
        })
       .catch((error)=>console.log("Erro", error))
-      alert("Logeo exitoso...")
-      
-       
+      alert("Logeo exitoso...")     
 };
-
-
     return (<div>
-   
     <form onSubmit={handleSubmitForm} className={styles.formContein}>
          <h1 style={{color:"#5260DB",position:"relative",margin:'0px'}}>Login</h1>
          <div className={styles.entrada1} >
@@ -66,9 +61,9 @@ const handleSubmitForm = (e)=>{
             {errors.password?<p style={{lineHeight: '1.5', color:'red', width:'270px', height:'30px', margin:'0'}}>{errors.password}</p>:<p style={{width:'270px', height:'30px'}}></p>}
       </div>
           <button type="submit" className={styles.boton}>Enter</button>
-    </form>
-    </div>
-    )
+    </form> 
+    </div>)
+  
 }
 
 export default Login;

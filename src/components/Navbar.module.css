@@ -1,6 +1,4 @@
-
-
- body{
+body{
    background-color: #5260db;
   width: 100%; 
   margin: 0;
@@ -9,7 +7,7 @@
 }
 .navbar {
    background-color: #333;
-   margin: 0;
+   margin: 0px;
    overflow: hidden;
    display: flex;
    justify-content: space-around;
@@ -32,6 +30,11 @@
   
 }
 .containerMain{
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  flex-direction: column;
+  gap: 110px;
   width: 100vw;
   min-height:100vh;
   margin: 0px;

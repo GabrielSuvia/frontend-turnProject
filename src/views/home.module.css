@@ -4,22 +4,26 @@
     padding: 20px;
     background-color: #1a4bec;
     position: relative;
-    top: 20px;
+    top: 90px;
+    height: 1750px;
    margin: 0px;
 }
-
+.subHomeConteiner{
+    position: relative;
+    top:-50px;
+}
 .imageContainer {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .imageTtem {
     flex-basis: calc(33% - 20px);
-    margin: 10px;
+    margin: 30px;
     background-color: #fff;
     padding: 10px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s;
+
 }

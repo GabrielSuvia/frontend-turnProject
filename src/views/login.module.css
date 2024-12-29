@@ -2,18 +2,15 @@
     background-color: white;
     border-radius: 3%;
     padding: 0px;
-    position: relative;
-    top: 150px;
-    left: 400px;
     width: 520px;
     height: 230px;
-    bottom: 100px;
     display: flex;
+    position: relative;
+    top: 140px;
     justify-content: center;
     align-items: center;
     gap: 15px;
     flex-direction: column;
-    
     }
     
 .entrada1{

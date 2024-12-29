@@ -5,8 +5,8 @@ import styles from './home.module.css';
 
 const Home = ()=>{
     return(<div className={styles.homeContainer}>
-     <br/>
-     <br/>
+      <div className={styles.subHomeConteiner}>
+    
     <h1 style={{position:'relative',top:"30px"}}>Bienvenido a tu Banco</h1>
 
     <div className={styles.imageContainer}>
@@ -25,6 +25,8 @@ const Home = ()=>{
        Un sistema de manejo de filas le da la información que necesita a comprobar cuáles medidas reducen las filas y cuáles son las más rentables. 
        El sistema de manejo de filas informa.</p>
     </div>
+    </div>
+
     </div>
     </div>)
 }
