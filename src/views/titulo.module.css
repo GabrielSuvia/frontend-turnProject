@@ -50,6 +50,7 @@ flex-grow: 1;
 min-height: 100vh;
 gap: 25px;
 min-width: 100vh;
+margin: 10px;
 }
 
 .turn{
