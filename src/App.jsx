@@ -13,10 +13,7 @@ import styles from './components/Navbar.module.css';
 import Footer from './views/footer.jsx';
 
 function App() {
- // const [count, setCount] = useState(0)
- //const Location = useLocation();
- //console.log(useLocation)
- console.log("hola mundo")
+  
   return ( <div className={styles.containerMain}>
   <Navbar/>
   <Routes>

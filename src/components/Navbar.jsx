@@ -31,7 +31,7 @@ const Navbar = ()=>{
     <Link to="/Misturnos">MY TURNS</Link>
     <button className={styles.btn} onClick={handleState}>Logout</button>
 
-    <div>
+    <div style={{height:"100px", width:"140px", display:"flex",justifyContent:"center",flexDirection:"column"}}>
     <h3 className={style.userName}>Usuario: {user.userName}</h3>
     <p className={style.userPhoto}><FontAwesomeIcon icon={faUser} size='2x' /></p>
     </div>

@@ -28,14 +28,15 @@ text-align: center;
   object-fit: cover; /* Asegura que la imagen cubra el contenedor sin distorsión */
   position: relative;
   color: #dad3bf;
-  left: 90px;
+  left: 60px;
 }
 
 .userName {
-  font-size: 16px; /* Tamaño de la fuente para el nombre */
+  font-size: 14px; /* Tamaño de la fuente para el nombre */
   font-weight: bold; /* Hace que el nombre sea negrita */
   color: #f5f2ee; /* Color del texto */
   position: relative;
+  text-align: center;
 }
 
 .turnes{
